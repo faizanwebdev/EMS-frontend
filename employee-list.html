@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"> -->
+    <title>Employee List</title>
+  </head>
+  <body>
+    
+    <!--navbar start-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="dashboard.html">Hi, Admin!</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="employee-list.html">Employees</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Jobs</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <div class="input-group">
+              <input type="text" class="form-control form-control-sm" placeholder="Search here" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn btn-sm btn-success" type="submit" id="button-addon2"><i class="fas fa-search"></i></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--navbar end-->
+
+    <!--employee list content start-->
+    <div class="container-fluid">
+      <div class="row mt-5">
+        <div class="col-lg-3 col-md-3"><!--sidebar start-->
+            <div class="list-group">
+                <div class="list-group-item bg-dark text-white small">Employee Data</div>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#addemployee" class="list-group-item"><i class="fas fa-plus"> </i> Add Employee</a>
+                <a href="employee-list.html" class="list-group-item"><i class="fas fa-eye"></i> View All Employees</a>
+              </div>
+        </div><!--sidebar end-->
+        <div class="col-lg-9 col-md-9"><!--table start-->
+          <table class="table table-striped table-hover table-light">
+              <tr class="table-dark">
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Designation</th>
+                  <th>Details</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
+              </tr>
+              <tr>
+                  <td>1</td>
+                  <td>Faizan Kazi</td>
+                  <td>faizanwebdev@gmail.com</td>
+                  <td>Devops Engineer</td>
+                  <td><a href="#"><i class="fas fa-info-circle"></i></a></td>
+                  <td><a href="#"><i class="fas fa-edit"></i></a></td>
+                  <td><a href="#"><i class="fas fa-trash"></i></a></td>
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>John Doe</td>
+                  <td>johndoe@gmail.com</td>
+                  <td>Web Developer</td>
+                  <td><a href="#"><i class="fas fa-info-circle"></i></a></td>
+                  <td><a href="#"><i class="fas fa-edit"></i></a></td>
+                  <td><a href="#"><i class="fas fa-trash"></i></a></td>
+              </tr>
+              <tr>
+                  <td>3</td>
+                  <td>Samantha Smith</td>
+                  <td>samsmith@gmail.com</td>
+                  <td>Cloud Engineer</td>
+                  <td><a href="#"><i class="fas fa-info-circle"></i></a></td>
+                  <td><a href="#"><i class="fas fa-edit"></i></a></td>
+                  <td><a href="#"><i class="fas fa-trash"></i></a></td>
+              </tr>
+              <tr>
+                  <td>4</td>
+                  <td>Mathew Hayden</td>
+                  <td>mathew@gmail.com</td>
+                  <td>System Administrator</td>
+                  <td><a href="#"><i class="fas fa-info-circle"></i></a></td>
+                  <td><a href="#"><i class="fas fa-edit"></i></a></td>
+                  <td><a href="#"><i class="fas fa-trash"></i></a></td>
+              </tr>
+              <tr>
+                  <td>5</td>
+                  <td>Adam Hayden</td>
+                  <td>adam@gmail.com</td>
+                  <td>Network Engineer</td>
+                  <td><a href="#"><i class="fas fa-info-circle"></i></a></td>
+                  <td><a href="#"><i class="fas fa-edit"></i></a></td>
+                  <td><a href="#"><i class="fas fa-trash"></i></a></td>
+              </tr>
+              <tr>
+                  <td>6</td>
+                  <td>Mathew Watson</td>
+                  <td>watson@gmail.com</td>
+                  <td>Software Engineer</td>
+                  <td><a href="#"><i class="fas fa-info-circle"></i></a></td>
+                  <td><a href="#"><i class="fas fa-edit"></i></a></td>
+                  <td><a href="#"><i class="fas fa-trash"></i></a></td>
+              </tr>
+          </table>
+        </div><!--table end-->
+      </div>
+    </div>
+    <!--employee list content end-->
+
+    <!--footer start-->
+    <footer class="footer fixed-bottom py-2 bg-dark">
+      <div class="container-fluid">
+        <p class="text-center text-light">EMS 2021 &copy; All Rights Reserved</p>
+      </div>
+    </footer>
+    <!--footer end-->
+
+    <!--modal start-->
+  
+    <div class="modal fade" id="addemployee" tabindex="-1" aria-labelledby="addemployeeLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title" id="exampleModalLabel">Add Employee Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Employee Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Employee Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <input type="number" name="contact" id="contact" class="form-control" placeholder="Employee Contact No." required>
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-control" name="designation" id="designation" required>
+                            <option value="">--- Select Designation ---</option>
+                            <option value="Web Developer">Web Developer</option>
+                            <option value="Python Developer">Python Developer</option>
+                            <option value="Network Engineer">Network Engineer</option>
+                            <option value="DevOps Engineer">DevOps Engineer</option>
+                            <option value="Business Analyst">Business Analyst</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="join" class="mb-2">Joining Date</label>
+                        <input type="date" name="join" id="join" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea name="address" id="address" cols="30" class="form-control" rows="5" placeholder="Employee address" required></textarea>
+                    </div>
+                    <div class="mb-3 d-grid">
+                        <input type="submit" value="Add Employee" id="add" name="add" class="btn btn-dark">
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--modal end-->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
