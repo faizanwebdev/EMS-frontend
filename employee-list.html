@@ -68,8 +68,8 @@
                   <td>faizanwebdev@gmail.com</td>
                   <td>Devops Engineer</td>
                   <td><a href="#" data-bs-toggle="modal" data-bs-target="#employeedetail"><i class="fas fa-info-circle"></i></a></td>
-                  <td><a href="#"><i class="fas fa-edit"></i></a></td>
-                  <td><a href="#"><i class="fas fa-trash"></i></a></td>
+                  <td><a href="#" data-bs-toggle="modal" data-bs-target="#editemployee"><i class="fas fa-edit"></i></a></td>
+                  <td><a href="#" data-bs-toggle="modal" data-bs-target="#deleteemployee"><i class="fas fa-trash"></i></a></td>
               </tr>
               <tr>
                   <td>2</td>
@@ -77,8 +77,8 @@
                   <td>johndoe@gmail.com</td>
                   <td>Web Developer</td>
                   <td><a href="#" data-bs-toggle="modal" data-bs-target="#employeedetail"><i class="fas fa-info-circle"></i></a></td>
-                  <td><a href="#"><i class="fas fa-edit"></i></a></td>
-                  <td><a href="#"><i class="fas fa-trash"></i></a></td>
+                  <td><a href="#" data-bs-toggle="modal" data-bs-target="#editemployee"><i class="fas fa-edit"></i></a></td>
+                  <td><a href="#" data-bs-toggle="modal" data-bs-target="#deleteemployee"><i class="fas fa-trash"></i></a></td>
               </tr>
               <tr>
                   <td>3</td>
@@ -86,8 +86,8 @@
                   <td>samsmith@gmail.com</td>
                   <td>Cloud Engineer</td>
                   <td><a href="#" data-bs-toggle="modal" data-bs-target="#employeedetail"><i class="fas fa-info-circle"></i></a></td>
-                  <td><a href="#"><i class="fas fa-edit"></i></a></td>
-                  <td><a href="#"><i class="fas fa-trash"></i></a></td>
+                  <td><a href="#" data-bs-toggle="modal" data-bs-target="#editemployee"><i class="fas fa-edit"></i></a></td>
+                  <td><a href="#" data-bs-toggle="modal" data-bs-target="#deleteemployee"><i class="fas fa-trash"></i></a></td>
               </tr>
               <tr>
                   <td>4</td>
@@ -95,8 +95,8 @@
                   <td>mathew@gmail.com</td>
                   <td>System Administrator</td>
                   <td><a href="#" data-bs-toggle="modal" data-bs-target="#employeedetail"><i class="fas fa-info-circle"></i></a></td>
-                  <td><a href="#"><i class="fas fa-edit"></i></a></td>
-                  <td><a href="#"><i class="fas fa-trash"></i></a></td>
+                  <td><a href="#" data-bs-toggle="modal" data-bs-target="#editemployee"><i class="fas fa-edit"></i></a></td>
+                  <td><a href="#" data-bs-toggle="modal" data-bs-target="#deleteemployee"><i class="fas fa-trash"></i></a></td>
               </tr>
               <tr>
                   <td>5</td>
@@ -104,8 +104,8 @@
                   <td>adam@gmail.com</td>
                   <td>Network Engineer</td>
                   <td><a href="#" data-bs-toggle="modal" data-bs-target="#employeedetail"><i class="fas fa-info-circle"></i></a></td>
-                  <td><a href="#"><i class="fas fa-edit"></i></a></td>
-                  <td><a href="#"><i class="fas fa-trash"></i></a></td>
+                  <td><a href="#" data-bs-toggle="modal" data-bs-target="#editemployee"><i class="fas fa-edit"></i></a></td>
+                  <td><a href="#" data-bs-toggle="modal" data-bs-target="#deleteemployee"><i class="fas fa-trash"></i></a></td>
               </tr>
               <tr>
                   <td>6</td>
@@ -113,8 +113,8 @@
                   <td>watson@gmail.com</td>
                   <td>Software Engineer</td>
                   <td><a href="#" data-bs-toggle="modal" data-bs-target="#employeedetail"><i class="fas fa-info-circle"></i></a></td>
-                  <td><a href="#"><i class="fas fa-edit"></i></a></td>
-                  <td><a href="#"><i class="fas fa-trash"></i></a></td>
+                  <td><a href="#" data-bs-toggle="modal" data-bs-target="#editemployee"><i class="fas fa-edit"></i></a></td>
+                  <td><a href="#" data-bs-toggle="modal" data-bs-target="#deleteemployee"><i class="fas fa-trash"></i></a></td>
               </tr>
           </table>
         </div><!--table end-->
@@ -177,8 +177,24 @@
     </div>
     <!--add employee modal end-->
 
+    <!--delete employee modal start-->
+    <div class="modal fade" id="deleteemployee" tabindex="-1" aria-labelledby="deleteemployeeLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h4>Are you sure you want to delete this employee?</h4>
+            </div>
+            <div class="modal-footer bg-dark">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Yes</button>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cancel</button>
+              </div>
+        </div>
+        </div>
+    </div>
+    <!--delete employee modal end-->
+
     <!--employee detail modal start-->
-    <div class="modal fade" id="employeedetail" tabindex="-1" aria-labelledby="addemployeeLabel" aria-hidden="true">
+    <div class="modal fade" id="employeedetail" tabindex="-1" aria-labelledby="employeedetailLabel" aria-hidden="true">
         <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header bg-dark text-white">
@@ -189,27 +205,27 @@
                 <table class="table table-border">
                     <tr>
                         <th>ID</th>
-                        <td>Employee ID</td>
+                        <td>2</td>
                     </tr>
                     <tr>
                         <th>Name</th>
-                        <td>Employee Name</td>
+                        <td>John Doe</td>
                     </tr>
                     <tr>
                         <th>Email</th>
-                        <td>Employee Email</td>
+                        <td>johndoe@gmail.com</td>
                     </tr>
                     <tr>
                         <th>Designation</th>
-                        <td>Employee Designation</td>
+                        <td>Web Developer</td>
                     </tr>
                     <tr>
                         <th>Joining Date</th>
-                        <td>Employee Joining Date</td>
+                        <td>27/09/2020</td>
                     </tr>
                     <tr>
                         <th>Address</th>
-                        <td>Employee Address</td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quia quidem non sunt accusantium totam provident laboriosam tempora, odio dolorum repellat possimus facilis veniam labore corrupti soluta a suscipit ex.</td>
                     </tr>
                 </table>
             </div>
@@ -218,6 +234,56 @@
     </div>
     <!--employee detail modal end-->
 
+    <!--edit employee modal start-->
+    <div class="modal fade" id="editemployee" tabindex="-1" aria-labelledby="editemployeeLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title" id="exampleModalLabel">Add Employee Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="mb-2 fw-bold">Employee Name</label>
+                        <input type="text" name="name" id="name" class="form-control" value="John Doe">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="mb-2 fw-bold">Employee Email</label>
+                        <input type="email" name="email" id="email" class="form-control" value="johndoe@gmail.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="contact" class="mb-2 fw-bold">Employee Contact No.</label>
+                        <input type="number" name="contact" id="contact" class="form-control" value="9876543210">
+                    </div>
+                    <div class="mb-3">
+                        <label for="designation" class="mb-2 fw-bold">Employee Designation</label>
+                        <select class="form-control" name="designation" id="designation">
+                            <option value="">--- Select Designation ---</option>
+                            <option value="Web Developer" selected>Web Developer</option>
+                            <option value="Python Developer">Python Developer</option>
+                            <option value="Network Engineer">Network Engineer</option>
+                            <option value="DevOps Engineer">DevOps Engineer</option>
+                            <option value="Business Analyst">Business Analyst</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="join" class="mb-2 fw-bold">Employee Joining Date</label>
+                        <input type="text" name="join" id="join" class="form-control" value="10/25/2021">
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="mb-2 fw-bold">Employee Address</label>
+                        <textarea name="address" id="address" cols="30" class="form-control" rows="5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat, ad accusamus omnis asperiores assumenda ullam labore adipisci vel ab cupiditate alias voluptatibus dolor iusto. Recusandae, molestiae veniam. Aut, expedita porro?</textarea>
+                    </div>
+                    <div class="mb-3 d-grid">
+                        <input type="submit" value="Add Employee" id="add" name="add" class="btn btn-dark">
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--edit employee modal end-->
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
